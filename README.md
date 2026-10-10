@@ -3,87 +3,67 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/batistefancellu"><img src="https://img.shields.io/badge/LinkedIn-batistefancellu-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:batiste.fancellu@student.isae-supaero.fr"><img src="https://img.shields.io/badge/Email-ISAE--SUPAERO-1e3a8a?style=flat-square&logo=maildotru&logoColor=white" alt="Email"/></a>
-  <img src="https://img.shields.io/badge/Langues-FR%20·%20EN%20·%20ES-334155?style=flat-square" alt="Langues"/>
+  <a href="https://www.linkedin.com/in/batistefancellu">LinkedIn</a> ·
+  <a href="mailto:batiste.fancellu@student.isae-supaero.fr">Email</a> ·
+  Français · English · Español
 </p>
 
-<p align="center">
-  <a href="https://github.com/batistefnl">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=3200&pause=900&color=3B82F6&center=true&vCenter=true&width=620&lines=Sim-to-Real+sur+un+robot+humano%C3%AFde+%F0%9F%A4%96;Agents+IA%2C+RAG+et+cloud+Azure+%E2%98%81%EF%B8%8F;Pr%C3%A9dire+s'il+reste+un+v%C3%A9lo+%C3%A0+ma+station+%F0%9F%9A%B2" alt="Typing"/>
-  </a>
-</p>
+Élève ingénieur à **ISAE-SUPAERO**, filière *Science de la donnée et de la décision*.
+J'aime prendre un problème concret, aller chercher les données moi-même et voir jusqu'où un modèle tient face au réel.
+J'ai fait de l'estimation d'état apprise pour un robot humanoïde au **LAAS-CNRS**, puis des agents IA et de l'infrastructure Azure chez **Clayens**.
+Ici, ce sont mes projets personnels, chacun avec ses résultats et ses limites.
 
----
-
-### 👋 Salut
-
-Je suis élève ingénieur à **ISAE-SUPAERO** (filière *Science de la donnée et de la décision*, domaine énergie et environnement).
-Ce qui me plaît : prendre un problème concret, aller chercher les données moi-même et voir jusqu'où un modèle tient face au réel.
-
-- 🤖 **Robotique & RL** : estimation d'état apprise pour l'humanoïde Unitree H1v2 au LAAS-CNRS
-- 🧠 **IA appliquée** : agents, RAG et déploiement cloud en contexte industriel chez Clayens
-- 📊 **Data science** : séries temporelles, prédiction probabiliste, inférence causale
-- ✈️ Aéronautique, rugby, natation
-
-<br>
-
-### 🚲 Projet à la une
+## Projets
 
 <table>
   <tr>
-    <td width="55%" valign="top">
-      <h4><a href="https://github.com/batistefnl/velotoulouse">Vais-je trouver un vélo ?</a></h4>
-      <p>Ma station VélôToulouse est souvent vide quand j'arrive. J'ai donc relevé l'état des <b>383 stations</b> toutes les 15 minutes pendant trois mois avec un <a href="https://github.com/batistefnl/velotoulouse-collecteur">collecteur sur Raspberry Pi</a>.</p>
-      <ul>
-        <li><b>Quand partir</b> : profils horaires de disponibilité par station</li>
-        <li><b>Prédire</b> : gradient boosting calibré pour P(≥ 2 vélos) à 15, 30 et 60 min, comparé à la persistance</li>
-        <li><b>La pluie</b> : −17 % d'activité pendant l'heure de pluie, avec effets fixes et test placebo</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Python-1e293b?style=flat-square&logo=python&logoColor=FFD43B"/>
-        <img src="https://img.shields.io/badge/scikit--learn-1e293b?style=flat-square&logo=scikitlearn&logoColor=F7931E"/>
-        <img src="https://img.shields.io/badge/pandas-1e293b?style=flat-square&logo=pandas&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Raspberry%20Pi-1e293b?style=flat-square&logo=raspberrypi&logoColor=C51A4A"/>
-      </p>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/batistefnl/outcome-switch-monitor">Outcome Switch Monitor</a></h3>
+      <p><b>Les essais cliniques mesurent-ils ce qu'ils avaient annoncé ?</b> Sur 5 634 essais de phase 3, environ <b>un sur trois</b> change le fond de son critère principal entre l'enregistrement et les résultats.</p>
+      <p>Historique récupéré dans la Wayback Machine, 95 essais annotés à la main en double aveugle, puis un LLM validé contre ces annotations (kappa 0,73) classe le reste pour 3 $.</p>
+      <p><sub>Python · LLM (OpenRouter) · statsmodels · JS · Playwright · hackathon HSIL 2026, équipe de 4</sub></p>
     </td>
-    <td width="45%" align="center">
+    <td width="50%" valign="top">
+      <a href="https://github.com/batistefnl/outcome-switch-monitor"><img src="https://raw.githubusercontent.com/batistefnl/outcome-switch-monitor/main/demo/media/explore-light.png" alt="Démo Outcome Switch Monitor"/></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/batistefnl/velotoulouse">Vais-je trouver un vélo ?</a></h3>
+      <p><b>Ma station VélôToulouse est souvent vide quand j'arrive.</b> J'ai relevé les 383 stations toutes les 15 minutes pendant trois mois avec un <a href="https://github.com/batistefnl/velotoulouse-collecteur">collecteur sur Raspberry Pi</a>.</p>
+      <p>Gradient boosting calibré pour P(≥ 2 vélos) à 15, 30 et 60 min, qui bat la persistance de 4,6 à 7 % (score de Brier). Effet de la pluie : −17 % d'activité, avec effets fixes et test placebo.</p>
+      <p><sub>Python · scikit-learn · pandas · Streamlit · Raspberry Pi · pytest</sub></p>
+    </td>
+    <td width="50%" valign="top">
       <a href="https://github.com/batistefnl/velotoulouse"><img src="https://raw.githubusercontent.com/batistefnl/velotoulouse/main/figures/carte_matin.png" alt="La vague du matin sur le réseau VélôToulouse"/></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/batistefnl/canicule-salon-2019">Canicule de 2019 à Salon-de-Provence</a></h3>
+      <p><b>43,4 °C le 28 juin 2019 : à quel point est-ce rare ?</b> Environ une fois tous les <b>80 ans</b> dans le climat actuel, contre des dizaines de milliers d'années dans celui de 1950.</p>
+      <p>Loi GEV non stationnaire codée à la main (vraisemblance, bootstrap paramétrique), avec une analyse du biais de sélection lié au choix de l'événement.</p>
+      <p><sub>Python · SciPy · valeurs extrêmes · GitHub Actions</sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/batistefnl/canicule-salon-2019"><img src="https://raw.githubusercontent.com/batistefnl/canicule-salon-2019/main/figures/niveaux_retour.png" alt="Niveaux de retour, climat de 1950 contre climat de 2025"/></a>
     </td>
   </tr>
 </table>
 
-<br>
-
-### 🧭 Parcours
+## Parcours
 
 | | |
 |:--|:--|
-| **2026** · Clayens Group | Stagiaire R&D IA & cloud. Organisation du **Jurassic'Hack**, premier hackathon IA du groupe (60+ participants, 5 POC dont 3 en industrialisation), infra Azure de 60+ VM, API FastAPI conteneurisée, agents Copilot Studio et RAG |
+| **2026** · Clayens Group | Stage R&D IA & cloud. Organisation du **Jurassic'Hack**, premier hackathon IA du groupe (60+ participants, 5 POC dont 3 en industrialisation), infra Azure de 60+ VM, API FastAPI conteneurisée, agents Copilot Studio et RAG |
 | **2025** · Universidad Nacional de Colombia | Échange à Bogotá, spécialisation en techniques d'IA |
-| **2025** · LAAS-CNRS | Stagiaire chercheur. Sim-to-Real pour l'estimation d'état du **Unitree H1v2** : 40 M d'échantillons générés sous Isaac Lab, réseau résiduel en PyTorch entraîné sur cluster A100/H100, validé en motion capture |
-| **2024** · Airbus Helicopters | Stage au département prototypes : essais moteur au point fixe (H160, H225, Tigre) |
+| **2025** · LAAS-CNRS | Stage de recherche. Sim-to-Real pour l'estimation d'état de l'humanoïde **Unitree H1v2** : 40 M d'échantillons générés sous Isaac Lab, réseau résiduel en PyTorch entraîné sur A100/H100, validé en motion capture |
+| **2024** · Airbus Helicopters | Stage au département prototypes : essais moteur au point fixe |
 | **2023 →** · ISAE-SUPAERO | Cycle ingénieur, filière Science de la donnée et de la décision |
 
-<br>
+## Outils
 
-### 🛠️ Boîte à outils
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,sklearn,c,matlab,latex&theme=dark" alt="Langages et ML"/>
-  <br>
-  <img src="https://skillicons.dev/icons?i=azure,docker,fastapi,linux,git,github&theme=dark" alt="Cloud et outils"/>
-</p>
-
-<p align="center">
-  <sub>Et aussi : Hugging Face · NVIDIA Isaac Lab / Isaac Sim · SLURM · LLM, RAG, fine-tuning (LoRA, MLX) · Copilot Studio · Power Automate · n8n</sub>
-</p>
-
-<br>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batistefnl/batistefnl/output/snake-dark.svg"/>
-    <img src="https://raw.githubusercontent.com/batistefnl/batistefnl/output/snake-light.svg" alt="Contributions en serpent"/>
-  </picture>
-</p>
+**ML** : PyTorch, scikit-learn, Hugging Face, apprentissage par renforcement, LLM, RAG, fine-tuning (LoRA)<br>
+**Données** : NumPy, pandas, SciPy, SQL, traitement du signal<br>
+**Ingénierie** : Python, C, Docker, FastAPI, Linux, SLURM, Git, GitHub Actions<br>
+**Cloud & simulation** : Microsoft Azure, NVIDIA Isaac Lab / Isaac Sim
